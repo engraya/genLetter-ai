@@ -93,12 +93,13 @@ export default function Menu() {
       </Fragment>
 
       <Fragment key='Mobile menu flex justify-between'>
-        <div className='space-x-3 hidden md:inline-block'>
+        <div className='space-x-3 hidden md:inline-block justify-between'>
           <Link className='font-bold w-16 h-auto' href={'/'}>
           GenLetter AI
           </Link>
           <RenderList
             data={LINKS}
+          
             render={link => (
               <Link
                 key={'desktop' + link.href}

@@ -4,18 +4,16 @@ export const LINKS: {
   target?: string
   rel?: string
 }[] = [
+  // {
+  //   children: 'Posts',
+  //   href: '/posts'
+  // },
   {
-    children: 'Posts',
-    href: '/posts'
+    children: 'About',
+    href: '/about'
   },
-  {
-    children: 'Profile',
-    href: '/profile'
-  },
-  {
-    children: 'Github',
-    href: 'https://github.com/danybeltran/nextjs-typescript-and-mongodb',
-    target: '_blank',
-    rel: 'noreferrer'
+    {
+    children: 'Generate',
+    href: '/generate'
   }
 ]
