@@ -20,7 +20,7 @@ const useGetLinksStyle = () => {
   const pathname = usePathname()
   return function getLinkStyles(href: string) {
     return cn('text-sm text-foreground/70 hover:text-foreground', {
-      'text-blue-700 dark:text-blue-400 font-medium hover:text-blue-700':
+      'text-emerald-700 dark:text-emerald-400 font-medium hover:text-blue-700':
         pathname.startsWith(href)
     })
   }
@@ -57,7 +57,7 @@ export default function Menu() {
                 {/* Logo */}
                 <div>
                   <Link
-                    className='font-bold h-auto text-2xl'
+                    className='font-bold text-2xl'
                     href={'/'}
                     onClick={hideMenu}
                   >
@@ -79,14 +79,8 @@ export default function Menu() {
                     )}
                   />
                 </div>
-
-                {/* Auth & Theme Toggles at Bottom */}
-                <div className='pb-4'>
                   <AuthAndTheme />
-                </div>
               </div>
-
-
             </DialogContent>
           </Dialog>
         </div>
@@ -95,7 +89,9 @@ export default function Menu() {
       <Fragment key='Mobile menu flex justify-between'>
         <div className='space-x-3 hidden md:inline-block justify-between'>
           <Link className='font-bold w-16 h-auto' href={'/'}>
-          GenLetter AI
+          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+                GenLetter AI
+          </span>
           </Link>
           <RenderList
             data={LINKS}

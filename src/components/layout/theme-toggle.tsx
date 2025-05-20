@@ -1,9 +1,7 @@
 'use client'
 import { IconType } from 'react-icons'
 import { LuMoon, LuSun, LuMonitor } from 'react-icons/lu'
-
 import { useTheme } from 'next-themes'
-
 import { Button } from '@/components/ui/button'
 import Cookies from 'js-cookie'
 import { create } from 'atomic-utils'

@@ -32,16 +32,17 @@ function CTA() {
       {/* CTA Content */}
       <div className="relative z-10 text-center">
         <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Own an AI Tool?
+          Ready to Land the Interview?
         </h2>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Join our curated collection of AI products and connect with thousands of engaged users.
+          Create a tailored, professional cover letter in seconds — powered by GenLetter AI.
+          No sign-up needed. Just start typing.
         </p>
         <a
-          href="https://eliteai.tools/tool/submit-new-tool"
-          className="mt-8 inline-block bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+          href="/generate"
+          className="mt-8 inline-block bg-emerald-600 hover:bg-cyan-700 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
         >
-          Submit Your Tool
+          Generate Your Letter
         </a>
       </div>
     </section>

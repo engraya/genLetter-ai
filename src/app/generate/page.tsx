@@ -84,7 +84,7 @@ export default function GeneratePage() {
     <section className="min-h-screen px-6 bg-white dark:bg-gray-950 py-12">
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent dark:text-white mb-2">
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-emerald-500 bg-clip-text text-transparent dark:text-white mb-2">
             Generate Your Cover Letter
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-base">
@@ -101,7 +101,7 @@ export default function GeneratePage() {
               </div>
               <div>
                 <Label htmlFor="position">Position Title</Label>
-                <Input id="position" value={formData.position} onChange={handleChange} placeholder="Frontend Developer" required />
+                <Input id="position" value={formData.position} onChange={handleChange} placeholder="Software Engineer" required />
               </div>
             </div>
 
@@ -129,7 +129,7 @@ export default function GeneratePage() {
 
             <div>
               <Label htmlFor="skills">Key Skills / Technologies</Label>
-              <Input id="skills" value={formData.skills} onChange={handleChange} placeholder="React, JavaScript, Tailwind CSS" required />
+              <Input id="skills" value={formData.skills} onChange={handleChange} placeholder="React, Nextjs, Docker, AWS" required />
             </div>
 
             <div>

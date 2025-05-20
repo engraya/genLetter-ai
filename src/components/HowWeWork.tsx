@@ -48,10 +48,10 @@ function HowWeWork() {
 
 const steps = [
   {
-    title: 'Initial Discussion',
-    description: 'We’ll discuss your job goals and generate your first draft based on your unique needs.',
+    title: 'Enter Your Details',
+    description: 'Tell us about the job, your experience, and a few key highlights — no resume upload needed.',
     icon: (
-      <svg
+    <svg
         stroke="currentColor"
         fill="none"
         strokeWidth="2"
@@ -61,15 +61,14 @@ const steps = [
         className="w-6 h-6"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-        <polyline points="7 10 12 15 17 10" />
-        <line x1="12" y1="15" x2="12" y2="3" />
+        <path d="M5 12h14" />
+        <path d="M12 5l7 7-7 7" />
       </svg>
     ),
   },
   {
-    title: 'Deal Finalized',
-    description: 'Once your inputs are locked, we finalize your tailored letter and give you full control.',
+    title: 'AI Drafts Your Letter',
+    description: 'Our AI instantly generates a professional, personalized cover letter tailored to your input.',
     icon: (
       <svg
         stroke="currentColor"
@@ -88,8 +87,8 @@ const steps = [
     ),
   },
   {
-    title: 'Letter Delivered',
-    description: 'Your cover letter is generated, styled, and formatted — ready to send in under 5 minutes.',
+    title: 'Preview & Edit',
+    description: 'Review your letter in real time. Make tweaks or regenerate — it’s all in your control.',
     icon: (
       <svg
         stroke="currentColor"
@@ -107,8 +106,8 @@ const steps = [
     ),
   },
   {
-    title: 'Launch & Feedback',
-    description: 'We celebrate your success and offer revisions or improvements based on your feedback.',
+    title: 'Download & Apply',
+    description: "Download your polished, job-specific letter in seconds. You're ready to impress and apply.",
     icon: (
       <svg
         stroke="currentColor"
@@ -120,8 +119,9 @@ const steps = [
         className="w-6 h-6"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M5 12h14" />
-        <path d="M12 5l7 7-7 7" />
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
       </svg>
     ),
   },

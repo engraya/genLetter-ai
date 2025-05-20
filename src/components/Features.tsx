@@ -57,10 +57,10 @@ const featureList = [
 
 function Features() {
   return (
-    <section className="bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section className="bg-white dark:bg-gray-950 transition-colors duration-300 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <p className="text-blue-500 font-semibold uppercase tracking-wide">Why Choose Us</p>
           <h2 className="mt-3 text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
             GenLetter AI Features
