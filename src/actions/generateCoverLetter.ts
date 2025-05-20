@@ -153,8 +153,8 @@ async function createWordDocument(coverLetter: string, position: string, name: s
         properties: {
           page: {
             size: {
-              width: 11906, // A4 width in twips
-              height: 16838, // A4 height in twips
+              width: 11906,
+              height: 16838,
               orientation: "portrait",
             },
             margin: {
