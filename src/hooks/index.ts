@@ -1,4 +1,3 @@
-import { Types } from '@/types'
 import { revalidate, useFetch } from 'atomic-utils'
 
 export function useUser() {
@@ -21,9 +20,3 @@ export function useUser() {
   })
 }
 
-export function usePreferences() {
-  return useFetch<Types.Preferences>('/preferences', {
-    maxCacheAge: '15 sec',
-    id: 'Preferences'
-  })
-}
