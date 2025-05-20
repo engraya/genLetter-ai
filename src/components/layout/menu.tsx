@@ -15,7 +15,7 @@ import { Fragment, useState } from 'react'
 import AuthAndTheme from './auth-and-theme'
 import { LINKS } from './links'
 import { usePathname } from 'next/navigation'
-
+import { LogoIcon } from '../Icons'
 const useGetLinksStyle = () => {
   const pathname = usePathname()
   return function getLinkStyles(href: string) {
@@ -35,7 +35,7 @@ export default function Menu() {
   return (
     <>
       <Fragment key='Desktop menu'>
-        <div className='md:hidden'>
+        <div className='flex md:hidden'>
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
               <Button variant='ghost' size='icon' className='rounded-full'>
@@ -83,28 +83,37 @@ export default function Menu() {
               </div>
             </DialogContent>
           </Dialog>
+            <Link href="/" className="flex items-center space-x-2">
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+                GenLetter AI
+              </span>
+            </Link>
         </div>
       </Fragment>
 
-      <Fragment key='Mobile menu flex justify-between'>
-        <div className='space-x-3 hidden md:inline-block justify-between'>
-          <Link className='font-bold w-16 h-auto' href={'/'}>
-          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+      <Fragment key='Mobile menu flex flex-row justify-between'>
+          <div className="hidden md:flex items-center space-x-6">
+            {/* Logo with icon and text */}
+            <Link href="/" className="flex items-center space-x-2">
+              <LogoIcon />
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
                 GenLetter AI
-          </span>
-          </Link>
-          <RenderList
-            data={LINKS}
-          
-            render={link => (
-              <Link
-                key={'desktop' + link.href}
-                className={getLinkStyle(link.href)}
-                {...link}
-              />
-            )}
-          />
-        </div>
+              </span>
+            </Link>
+
+            {/* Rendered navigation links */}
+            <RenderList
+              data={LINKS}
+              render={(link) => (
+                <Link
+                  key={'desktop' + link.href}
+                  className={getLinkStyle(link.href)}
+                  {...link}
+                />
+              )}
+            />
+          </div>
+
         <AuthAndTheme />
       </Fragment>
 

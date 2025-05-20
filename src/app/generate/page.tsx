@@ -83,17 +83,19 @@ export default function GeneratePage() {
   return (
     <section className="min-h-screen px-6 bg-white dark:bg-gray-950 py-12">
       <div className="max-w-2xl mx-auto space-y-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-emerald-500 bg-clip-text text-transparent dark:text-white mb-2">
-            Generate Your Cover Letter
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-base">
-            Fill in the details to create a professional, AI-generated letter.
-          </p>
-        </div>
+  
 
         {!coverLetter ? (
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <>
+            <div className="text-center">
+              <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-emerald-500 bg-clip-text text-transparent dark:text-white mb-2">
+                Generate Your Cover Letter
+              </h1>
+              <p className="text-gray-600 dark:text-gray-300 text-base">
+                Fill in the details to create a professional, AI-generated letter.
+              </p>
+            </div>
+            <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <Label htmlFor="name">Your Full Name</Label>
@@ -149,6 +151,9 @@ export default function GeneratePage() {
 
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
           </form>
+        
+          </>
+      
         ) : (
           <div className="text-center space-y-4">
             <p className="text-green-600 dark:text-green-400 font-medium">Cover letter generated successfully!</p>
