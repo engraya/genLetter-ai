@@ -26,7 +26,7 @@ You are an expert cover letter writer.
 Generate a professional cover letter using the format and tone of the sample below. Use the details provided to personalize the letter, but follow the structure, length, and style **exactly**.
 
 --- SAMPLE FORMAT START ---
-Subject: Application for [Job Title] - [Your Name]
+Subject: Application for [Job Title]
 
 Dear [Hiring Manager Name or "Hiring Manager"],
 
@@ -167,7 +167,7 @@ async function createWordDocument(coverLetter: string, position: string, name: s
         },
         children: [
           new Paragraph({
-            text: `Application for ${position} - ${name}`,
+            text: `Application for ${position}`,
             heading: HeadingLevel.HEADING_1,
             alignment: AlignmentType.CENTER,
             spacing: { after: 400 },

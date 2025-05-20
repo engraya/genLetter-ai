@@ -4,7 +4,7 @@ import React from 'react'
 
 function HowWeWork() {
   return (
-    <section className="min-h-screen px-4 bg-white text-gray-800 dark:bg-gray-950 dark:text-white transition-colors">
+    <section className="mb-20 px-4 bg-white text-gray-800 dark:bg-gray-950 dark:text-white transition-colors">
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         {/* Header */}
         <div className="md:w-2/3 lg:w-1/2">
